@@ -1919,6 +1919,7 @@ def main():
         app.run_webhook(
             listen="0.0.0.0",
             port=PORT,
+            url_path=BOT_TOKEN,
             webhook_url=f"{WEBHOOK_URL}/{BOT_TOKEN}",
             secret_token=BOT_TOKEN.replace(":", "_"),
         )
